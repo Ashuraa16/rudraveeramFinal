@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudraveeram</title>
+  <link rel="icon" href="images/logo/logo top.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("o6y8mLRw3pebokg2u");
+   })();
+</script>
+</head>
+
+<body id="home">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <!-- ----------------------loading part starts----------------------------- -->
+  <div class="loader" id="loader">
+    <div class="loader-container">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <!-- ------------------loading part end-------------------------------- -->
+  <div id="main-content-div">
+    <header id="nav-bar">
+      <!-- <a href="#" class="brand">R</a> -->
+      <a href="#" class="brand"><img src="images/logo/logo top.png" alt="" srcset="" id="logo-img"></a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">projects</a>
+          <a href="#about">About</a>
+          <a href="#projects">review</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!--------------------------- contact section starts----------------------------- -->
+    <div class="sidebar-contact" id="sidebar-contact">
+      <div class="toggle" id="toggle"></div>
+      <h2>Contact Us</h2>
+      <div class="scroll">
+        <form>
+          <input type="text" name="" placeholder="Name" id="name-val">
+          <input type="email" name="" placeholder="Email" id="email-val">
+          <input type="rel" name="" placeholder="Phone Number" id="number-val">
+          <textarea placeholder="Message here.." id="msg-val"></textarea>
+          <button class="doneWork" onclick="sendMail()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!--------------------------- contact section ends----------------------------- -->
+
+
+
+    <section class="home">
+      <video class="video-slide active" src="videos/3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="videos/5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1><img src="images/logo/name.png" alt="" srcset="" width="700px"></h1>
+        <!-- <img src="images/logo/Visiting Card Rudra 1.png" alt=""> -->
+
+        <p>Building future, painting beauty: Where infrastructure meets artistry.</p>
+        <a href="pdf/RUDRAVEERAM  (1).pdf" target="_blank" attribute>Download Profile</a>
+      </div>
+      <div class="content">
+        <h1><img src="images/logo/name.png" alt="" srcset="" width="700px"></h1>
+        <p>Building excellence, painting wonders: Iconic infrastructure, vibrant artistry.</p>
+        <a href="pdf/RUDRAVEERAM  (1).pdf" target="_blank" attribute>Download Profile</a>
+      </div>
+      <div class="content">
+        <h1><img src="images/logo/name.png" alt="" srcset="" width="700px"></h1>
+        <p>Prowess meets art: Building, painting awe-inspiring masterpieces.</p>
+        <a href="pdf/RUDRAVEERAM  (1).pdf" target="_blank" attribute>Download Profile</a>
+      </div>
+      <div class="content">
+        <h1><img src="images/logo/name.png" alt="" srcset="" width="700px"></h1>
+        <p>Precision builds, passion paints: Impeccable construction, breathtaking art.</p>
+        <a href="pdf/RUDRAVEERAM  (1).pdf" target="_blank" attribute>Download Profile</a>
+      </div>
+      <div class="content">
+        <h1><img src="images/logo/name.png" alt="" srcset="" width="700px"></h1>
+        <p>Building wonders, painting success: Infrastructure, vibrant narratives.</p>
+        <a href="pdf/RUDRAVEERAM  (1).pdf" target="_blank" attribute>Download Profile</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/people/Rudraveeram-Lifespaces-Concept-Pvt-Ltd/100093416053485/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/rudraveeram.ltdpvt/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/RUDRAVEERAM_ltd" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <section id="services">
+      <h1>Services</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/polishing.png',document.getElementById('imaged1'))"
+            onmouseout="changeImageSource('images/services/polishing-hover.png',document.getElementById('imaged1'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-hammer"></i> -->
+              <img src="images/services/polishing-hover.png" alt="" srcset="" width="35px" id="imaged1">
+            </div>
+            <h3>POLISHING WORK</h3>
+            <p>
+              Elevate the beauty of your spaces with our impeccable polishing services.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/ceiling.png',document.getElementById('imaged2'))"
+            onmouseout="changeImageSource('images/services/ceiling-hover.png',document.getElementById('imaged2'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-brush"></i> -->
+              <img src="images/services/ceiling-hover.png" alt="" width="35px" id="imaged2">
+            </div>
+            <h3>CEILING WORK</h3>
+            <p>
+              Transform your space with our expert ceiling work craftsmanship.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/putty.png',document.getElementById('imaged3'))"
+            onmouseout="changeImageSource('images/services/putty-hover.png',document.getElementById('imaged3'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-wrench"></i> -->
+              <img src="images/services/putty-hover.png" alt="" srcset="" width="35px" id="imaged3">
+            </div>
+            <h3>PUTTY WORK</h3>
+            <p>
+              Experience flawless perfection with our exceptional putty work services.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/paint-roller.png',document.getElementById('imaged4'))"
+            onmouseout="changeImageSource('images/services/paint-roller-hover.png',document.getElementById('imaged4'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-truck-pickup"></i> -->
+              <img src="images/services/paint-roller-hover.png" alt="" srcset="" width="35px" id="imaged4">
+            </div>
+            <h3>PAINTING WORK</h3>
+            <p>
+              Unleash vibrant colors and bring life to your walls with our top-notch painting services.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/labour.png',document.getElementById('imaged5'))"
+            onmouseout="changeImageSource('images/services/labour-hover.png',document.getElementById('imaged5'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-broom"></i> -->
+              <img src="images/services/labour-hover.png" alt="" srcset="" width="35px" id="imaged5">
+            </div>
+            <h3>LABOUR SUPPLY</h3>
+            <p>
+              Ensure a smooth workflow and efficient operations with our reliable labor supply services.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card"
+            onmouseover="changeImageSource('images/services/floor.png',document.getElementById('imaged6'))"
+            onmouseout="changeImageSource('images/services/floor-hover.png',document.getElementById('imaged6'))">
+            <div class="icon-wrapper">
+              <!-- <i class="fas fa-plug"></i> -->
+              <img src="images/services/floor-hover.png" alt="" srcset="" width="35px" id="imaged6">
+            </div>
+            <h3>FLOORING WORK</h3>
+            <p>
+              Enhance the elegance of your space with our exceptional flooring work craftsmanship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <section id="projects" style="background-color: #f8f7f7;padding-top: 20px;">
+      <h1>Projects</h1>
+
+      <div class="container">
+        <div class="item" id="1">
+          <img src="images/projects/man infra ghatkoper.jpeg" alt="">
+          <div class="text">
+            <h3>MAN INFRA GHATKOPER</h4>
+              <p>Internal Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+
+        <div class="item" id="2">
+          <img src="images/projects/Indiabul savroli.jpeg" alt="">
+          <div class="text">
+            <h3>INDIABUL SAVROLI</h4>
+              <p>External Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+
+        <div class="item" id="3">
+          <img src="images/projects/Indiabulls panvel.webp" alt="">
+          <div class="text">
+            <h3>INDIABULL PANVEL</h4>
+              <p>External Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+
+        <div class="item" id="4">
+          <img src="images/projects/Suntek ram mandir goregaon.jpeg" alt="">
+          <div class="text">
+            <h3>SUNTEK RAM MANDIR GOREGOAN</h4>
+              <p>Internal Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+
+        <div class="item" id="5">
+          <img src="images/projects/Piramal revanta mulund.jpg" alt="">
+          <div class="text">
+            <h3>PIRAMAL REVANTA MULUND</h4>
+              <p>External Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+
+        <div class="item" id="6">
+          <img src="images/projects/Runwal dombivali.webp" alt="">
+          <div class="text">
+            <h3>RUNWAL DOMBIVLI</h4>
+              <p>Internal Paint Work</p>
+          </div>
+          <div class="button btn1">Learn More</div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="preview" class="modal">
+        <div class="modal-content">
+          <span class="close cls1">&times;</span>
+          <img id="img" src="">
+          <div id="details">
+            <h3 id="title"></h3>
+            <p id="info">Some text</p>
+            <div class="button btn1 end" id="live">close</div>
+            <!-- <i class="fab fa-location-square" id="github"></i> -->
+            <i class="fa fa-map-marker" aria-hidden="true" id="github"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------about starts--------------------------------------------------------------->
+    <section id="about">
+      <h1>Board Members</h1>
+      <div class="container">
+        <div class="grid">
+          
+          
+          <div class="card">
+            <div class="card_img">
+              <img src="images/board members/ajay.jpg" alt="">
+            </div>
+            <div class="card_body">
+              <h2 class="card_title" id="ajay">Ajay Upadhya</h2>
+              <h6 class="designation">DIRECTOR</h6>
+
+              <div class="call_btn">
+                <a href="tel:+919029916017" class="btn_icon">
+                  <i class="fas fa-phone-alt"></i>
+                  <span class="circle"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="images/board members/rajkumar.jpg" alt="">
+            </div>
+            <div class="card_body">
+              <h2 class="card_title">
+                RAJKUMAR MISHRA</h2>
+              <h6 class="designation">CHIEF MANAGING DIRECTOR</h6>
+              <div class="call_btn">
+                <a href="tel:+919821272344" class="btn_icon">
+                  <i class="fas fa-phone-alt"></i>
+                  <span class="circle"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img src="images/board members/arunmishra1.jpg" alt="">
+            </div>
+            <div class="card_body">
+              <h2 class="card_title">VARUN MISHRA</h2>
+              <h6 class="designation">DIRECTOR</h6>
+              <div class="call_btn">
+                <a href="tel:+917710838849" class="btn_icon">
+                  <i class="fas fa-phone-alt"></i>
+                  <span class="circle"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="home" id="review" style="background-color: #f8f7f7;padding-top: 20px;">
+      <section id="testim" class="testim">
+        <h1>Reviews</h1>
+        <div class="wrap">
+
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
+          <div id="testim-content" class="cont">
+
+            <div class="active">
+              <div class="img"><img
+                  src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+                  alt=""></div>
+              <h2>Rajesh S, Architect</h2>
+              <p>&#8220;Choosing Rudraveeram was a wise decision for our construction project. Their team's deep understanding
+                of Indian architecture and construction techniques helped bring our vision to life. They seamlessly
+                blended modern design elements with traditional aesthetics, resulting in a truly remarkable outcome.&#8221;</p>
+            </div>
+
+            <div>
+              <div class="img"><img
+                  src="https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png"
+                  alt=""></div>
+              <h2> Pooja R, Homeowner</h2>
+              <p>&#8220;I'm extremely satisfied with the services provided by Rudraveeram. Their skilled craftsmen meticulously
+                crafted every detail of our home, incorporating elements of Indian craftsmanship and culture. The result
+                is a beautiful space that reflects our heritage and exceeds our expectations.&#8221;</p>
+            </div>
+
+            <div>
+              <div class="img"><img src="https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png" alt=""></div>
+              <h2>Sanjay M, Business Owner</h2>
+              <p>&#8220;Working with Rudraveeram was an absolute pleasure. They embraced the rich diversity of Indian culture
+                and artistry, infusing it into our commercial project. Their attention to detail, combined with their
+                knowledge of local building regulations, made the entire process smooth and hassle-free&#8221;</p>
+            </div>
+
+            <div>
+              <div class="img"><img src="https://cdn-icons-png.flaticon.com/512/219/219984.png" alt=""></div>
+              <h2>Aishwarya K, Interior Designer</h2>
+              <p>&#8220;The team at Rudraveeram truly understands the essence of Indian design. They effortlessly captured the
+                vibrant colors, intricate patterns, and traditional motifs in our project. Their commitment to
+                preserving our cultural heritage while delivering top-notch quality is commendable.&#8221;</p>
+            </div>
+
+            <div>
+              <div class="img"><img
+                  src="https://icons.veryicon.com/png/o/internet--web/web-interface-flat/6606-male-user.png" alt="">
+              </div>
+              <h2> Ravi G, Heritage Conservationist</h2>
+              <p>&#8220;I highly recommend Rudraveeram for their exceptional craftsmanship and dedication to preserving India's
+                architectural heritage. Their expertise in restoring historical buildings is unparalleled. They brought
+                our heritage structure back to its former glory, showcasing our rich history and culture.&#8221;</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+    <!--------------------------------------------------- Company Section starts ------------------------------------------>
+    <section id="company">
+      <div class="slider">
+        <div class="slide-track2">
+          <div class="slide"><img src="images/companies logo/1.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/2.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/3.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/4.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/5.webp" alt=""></div>
+          <div class="slide"><img src="images/companies logo/6.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/7.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/8.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/9.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Adani Realty.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Afcons Infrastructure Limited.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Ajmera Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Al Fara’a Integrated Construction Group.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Arihant Superstructures Ltd.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/HCC Group.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/okhandwala Infrastructure.webp" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Godrej Properties.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Shapoorji Pallonji Group (SPCPL).svg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Damji Shamji Shah Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/HCC Group.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/IRB Infrastructure Developers Ltd.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/JP Infra.png" alt=""></div>
+        </div>
+
+
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide"><img src="images/companies logo/Bharat Infrastructure & Engineering Pvt. Ltd.jpg" alt="">
+          </div>
+          <div class="slide"><img src="images/companies logo/Damji Shamji Shah Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/DB Realty Limited.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/GMR Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Godrej Properties.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/HCC Group.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/IRB Infrastructure Developers Ltd.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/ITD Cementation.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/JP Infra.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/K Raheja Corp.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Omkar Realtors & Developers.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Karrm Infrastructure.jpg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Lodha Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/MICL Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Nagarjuna Construction Company (NCC).png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Oberoi Realty.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/okhandwala Infrastructure.webp" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Pranav Infra.avif" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Rajesh Lifespace.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Sabari Group.png" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Shapoorji Pallonji Group (SPCPL).svg" alt=""></div>
+          <div class="slide"><img src="images/companies logo/Xrbia.webp" alt=""></div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- -------------------------------------------------Company Section ends --------------------------------------------->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div id="contact" style="background-color: #f8f7f7;padding-top: 20px;">
+
+      <section id="secialMedia">
+        <div class="contact-firsthalf">
+          <h1>Want To Contact Us?</h1>
+          <button class="Button1 button" onclick="sendUs()">Message Us</button>
+          <a href="https://goo.gl/maps/RTeW7CxgZHANchMD6" target="_blank"><button
+              class="Button2 button">Location</button></a>
+        </div>
+        <div class="slidercircle">
+          <div class="circle-one">
+            <div class="circle-arround-one"></div>
+          </div>
+          <div class="circle-two">
+            <a href="https://www.facebook.com/people/Rudraveeram-Lifespaces-Concept-Pvt-Ltd/100093416053485/" target="_blank">
+              <div class="circle-arround-two-1 anima">
+                <i class="fab fa-facebook-f circle-icon"></i>
+                <span class="circle-text" style="color:#1769e4;">Facebook</span>
+
+              </div>
+            </a>
+            <a href="https://twitter.com/RUDRAVEERAM_ltd" target="_blank">
+              <div class="circle-arround-two-2 anima">
+                <i class="fab fa-twitter circle-icon"></i>
+                <span class="circle-text" style="color:#61a0fe;">Twitter</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/rudraveeram.ltdpvt/" target="_blank">
+              <div class="circle-arround-two-3 anima">
+                <i class="fab fa-instagram circle-icon"></i>
+                <span class="circle-text" style="color:#6c0191;">Instagram</span>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCwu1wtIk1h4vbp7RJYrF1oA" target="_blank">
+              <div class="circle-arround-two-4 anima">
+                <i class="fab fa-youtube circle-icon"></i>
+                <span class="circle-text" style="color:#ff0000;">Youtube</span>
+              </div>
+            </a>
+          </div>
+          <div class="circle-middle">
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/+918433606677"> <img alt="Chat on WhatsApp"
+                src="https://img.icons8.com/color/48/null/whatsapp--v1.png" />
+
+              <!-- <img src=""/> -->
+          </div>
+        </div>
+
+
+
+        <div class="middle">
+          <a class="btn" href="https://www.facebook.com/people/Rudraveeram-Lifespaces-Concept-Pvt-Ltd/100093416053485/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="btn" href="https://twitter.com/RUDRAVEERAM_ltd" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/rudraveeram-lifespace-concepts-private-limited-92250527a/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="btn" href="https://www.instagram.com/rudraveeram.ltdpvt/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="btn" href="https://www.youtube.com/channel/UCwu1wtIk1h4vbp7RJYrF1oA" target="_blank">
+            <i class="fab fa-youtube"></i>
+            <a class="btn" href="https://wa.me/+918433606677" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+
+      </section>
+    </div>
+
+    <!-- -------------------------------------------footer section starts---------------------------------------------->
+    <div class="pg-footer">
+      <footer class="footer">
+        <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+          preserveAspectRatio="none">
+          <path class="footer-wave-path"
+            d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+          </path>
+        </svg>
+        <div class="footer-content">
+          <div class="footer-content-column">
+            <div class="footer-logo">
+              <a class="footer-logo-link" href="#">
+                <span class="hidden-link-text">LOGO</span>
+                <h1><img src="images/logo/Visiting Card Rudra 1.png" alt="" srcset="" style="width: 250px;"></h1>
+              </a>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Get Started</h2>
+              <ul id="menu-get-started" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#home">Start</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="./pdf/RUDRAVEERAM  (1).pdf" target="_blank">Documentation</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#" onclick="alertFun()">Market Trends</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Company</h2>
+              <ul id="menu-company" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#contact">Contact</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="#" onclick="alertFun()">News</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#" onclick="alertFun()">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Legal</h2>
+              <ul id="menu-legal" class="footer-menu-list">
+                <li
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                  <a href="#" onclick="alertFun()">Privacy Notice</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#" onclick="alertFun()">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-menu">
+              <h2 class="footer-menu-name"> Quick Links</h2>
+              <ul id="menu-quick-links" class="footer-menu-list">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/RTeW7CxgZHANchMD6">Support
+                    Center</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a target="_blank" rel="noopener noreferrer" href="#" onclick="alertFun()">Service Status</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#" onclick="alertFun()">Security</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#" onclick="alertFun()">Blog</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                  <a href="#" onclick="alertFun()">Customers</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#review">Reviews</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-column">
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+              <p class="footer-call-to-action-description"> Have a support question?</p>
+              <a class="footer-call-to-action-button button" onclick="sendUs()" href="#"> Get in Touch </a>
+            </div>
+            <div class="footer-call-to-action">
+              <h2 class="footer-call-to-action-title"> You Call Us</h2>
+              <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                  href="tel:+919821272344" target="_self"> +919821272344 </a></p>
+            </div>
+          </div>
+          <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 236 54">
+              <path class="footer-social-amoeba-path"
+                d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z">
+              </path>
+            </svg>
+            <a class="footer-social-link linkedin" href="https://www.linkedin.com/in/rudraveeram-lifespace-concepts-private-limited-92250527a/" target="_blank">
+              <span class="hidden-link-text">Linkedin</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg">
+                <path class="footer-social-icon-path"
+                  d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
+                </path>
+              </svg>
+            </a>
+            <a class="footer-social-link twitter" href="https://twitter.com/RUDRAVEERAM_ltd" target="_blank">
+              <span class="hidden-link-text">Twitter</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg">
+                <path class="footer-social-icon-path"
+                  d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 ">
+                </path>
+              </svg>
+            </a>
+            <a class="footer-social-link youtube" href="https://www.youtube.com/channel/UCwu1wtIk1h4vbp7RJYrF1oA" target="_blank">
+              <span class="hidden-link-text">Youtube</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg">
+                <path class="footer-social-icon-path"
+                  d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
+                </path>
+              </svg>
+            </a>
+            <a class="footer-social-link github" href="#" target="_blank">
+              <span class="hidden-link-text">Github</span>
+              <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg">
+                <path class="footer-social-icon-path">
+                </path>
+
+              </svg>
+
+              <i class="fab fa-instagram fa-fw" id="insta" ></i>
+
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-wrapper">
+            <p class="footer-copyright-text">
+              <a class="footer-copyright-link" href="#" target="_self"> ©2023. | Designed By: Dikshant Pandey. | All
+                rights reserved. </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <!------------------------------------- java script links  -------------------------------------------------------------------->
+  <script src="script.js" type="text/javascript">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    function sendMail() {
+      var params = {
+        name: document.getElementById("name-val").value,
+        email: document.getElementById("email-val").value,
+        number: document.getElementById("number-val").value,
+        message: document.getElementById("msg-val").value,
+      };
+      // console.log(params)
+
+      const serviceID = "service_p489h5g";
+      const templateID = "template_wyfck6l";
+
+      emailjs.send(serviceID, templateID, params)
+        .then(res => {
+          document.getElementById("name-val").value = "";
+          document.getElementById("email-val").value = "";
+          document.getElementById("msg-val").value = "";
+          document.getElementById("number-val").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+        })
+        .catch(err => console.log(err));
+
+    }</script>
+</body>
+
+</html>
