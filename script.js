@@ -107,7 +107,7 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
 
 
 
-//-----------------------Javacript for video slider navigation
+//-----------------------Javacript for video slider navigation-----------------------------
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
@@ -323,8 +323,28 @@ var modalInfo = {
     info: "Stunning interior transformation at RUNWAL DOMBIVLI with exceptional work. Enhancing beauty and ambiance with skilled team and quality materials.",
     link: "#",
     github: "#"
+  },
+  7: {
+    title: "SUNTEK RAM MANDIR GOREGOAN",
+    info: "Experience the stunning interior transformation of SUNTEK RAM MANDIR GOREGAON with our exceptional internal work. Trust us to enhance the beauty and ambiance of the space through our skilled team and high-quality materials.",
+    link: "#",
+    github: "#"
+  },
+  8: {
+    title: "PIRAMAL REVANTA MULUND",
+    info: "Witness the extraordinary exterior transformation of PIRAMAL REVANTA MULUND with our exceptional work. Trust us to enhance the property's allure and beauty through our skilled team and top-quality materials.",
+    link: "#",
+    github: "#"
+  },
+  9: {
+    title: "PIRAMAL REVANTA MULUND",
+    info: "Witness the extraordinary exterior transformation of PIRAMAL REVANTA MULUND with our exceptional work. Trust us to enhance the property's allure and beauty through our skilled team and top-quality materials.",
+    link: "#",
+    github: "#"
   }
 };
+
+
 
 // Get the modal
 var modal = document.getElementById('preview');
@@ -342,7 +362,17 @@ for (let i = 0; i < btn.length; i++) {
     openModal(project);
   })
 };
-
+function showMore(){
+  var item1=document.getElementById('7');
+  var item2=document.getElementById('8');
+  var item3=document.getElementById('9');
+  console.log(item1,item2,item3)
+  item1.style.display='flex';
+  item2.style.display='flex';
+  item3.style.display='flex';
+  document.getElementById('view-more').style.display='none';
+  
+}
 function openModal(project) {
   var id = project.id;
   var img = project.getElementsByTagName("img")[0].src;
@@ -384,3 +414,33 @@ function alertFun() {
 document.getElementById('insta').addEventListener('click',function(){
   window.open('https://www.instagram.com/rudraveeram.ltdpvt/','_blank');
 });
+
+
+// //-----------------------Scroll effect on services boxes------------------------------
+// // Function to check if an element is in the viewport
+// function isElementInViewport(el) {
+//   const rect = el.getBoundingClientRect();
+//   return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
+
+// const cards = document.querySelectorAll('.xMotion');
+// console.log(cards)
+// // Function to animate cards on scroll
+// function animateCardsOnScroll() {
+//   cards.forEach((card, index) => {
+//       if (isElementInViewport(card)) {
+//           card.style.transitionDelay = `${index*0.4 * 0.1}s`;
+//           card.classList.add('visible');
+//       }
+//   });
+// }
+
+// // Add a scroll event listener to trigger the animation
+// window.addEventListener('scroll', animateCardsOnScroll);
+
+// //-----------------------Scroll effect ends on services boxes------------------------------
